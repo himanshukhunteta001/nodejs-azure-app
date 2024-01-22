@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background: url('/views/images/landing_page.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .outer-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      color: whitesmoke;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: right;
+    }
+
+    .row {
+      display: flex;
+      justify-content: flex-end;
+      /* Shifted to the right side */
+    }
+
+    .card {
+      width: 240%;
+      /* Adjusted the width */
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      margin-top: 20px;
+      /* Added margin to separate the cards */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-size: 24px;
+      color: #343a40;
+    }
+
+    .card-text {
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="outer-container">
+    <h1>Student Result Management System</h1>
+    <div class="row">
+      <div class="col-md-6" style="margin-top: 100px;">
+        <div class="card mb-4 shadow-sm bg-light" onclick="location.href='/teacher/login'">
+          <div class="card-body">
+            <h5 class="card-title">Teacher</h5>
+            <p class="card-text">View and manage student details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm bg-light" onclick="location.href='/student/checkresult'">
+          <div class="card-body">
+            <h5 class="card-title">Student</h5>
+            <p class="card-text">Check your results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
