@@ -7,7 +7,7 @@ const path = require('path');
 const cookies = require('cookie-parser');
 
 const app = express();
-const port = 8081;
+const port = 8080;
 
 //Connection to mongodb  
 mongoose.connect(
